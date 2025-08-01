@@ -1,0 +1,16 @@
+<?php
+$images = array("img1", "img10", "img11", "img1-1", "img1-2", "IMG123");
+
+echo "<b>ก่อนการเรียงลำดับ:</b><br>";
+echo implode(", ", $images) . "<br><br>";
+
+$sort1 = $images;
+sort($sort1);
+echo "<b>หลังใช้ sort():</b><br>";
+echo implode(", ", $sort1) . "<br><br>";
+
+$sort2 = $images;
+natcasesort($sort2);
+echo "<b>หลังใช้ natcasesort():</b><br>";
+echo implode(", ", $sort2);
+?>
